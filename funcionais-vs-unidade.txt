@@ -1,0 +1,3 @@
+Escopo: Os testes de unidade se concentram em testar unidades individuais do código, como métodos e funções, isoladamente do resto do sistema. Por outro lado, os testes funcionais avaliam o sistema ou componente como um todo, testando sua funcionalidade completa em relação aos requisitos do usuário.
+
+Propósito: Os testes de unidade são geralmente utilizados para verificar se pequenas partes do código funcionam conforme o esperado, detectando bugs e erros de lógica no início do ciclo de desenvolvimento. Já os testes funcionais são usados para avaliar a funcionalidade geral do sistema, verificando se ele está atendendo às expectativas do usuário final e se os requisitos estão sendo cumpridos.
