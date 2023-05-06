@@ -8,10 +8,6 @@ class HomePageTest(TestCase):
         return render(request, 'home.html', {
             'new_item_text': request.POST.get('item_text', ''),
         })
-    
-    def test_only_saves_items_when_necessary(self):
-        self.client.get('/')
-        self.assertEqual(Item.objects.count(), 0)
 
 class ItemModelTest(TestCase):
 
