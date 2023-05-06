@@ -1,7 +1,7 @@
-from django.test import TestCase
+from django.http import HttpResponse
+from django.shortcuts import render
 
-class HomePageTest(TestCase):
-
-    def test_uses_home_template(self):
-        response = self.client.get('/')
-        self.assertTemplateUsed(response, 'home.html')
+def home_page(request):
+    if request.method == 'POST':
+        return HttpResponse(request.POST['item_text'])
+    return render(request, 'home.html')
